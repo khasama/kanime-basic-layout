@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="public/img/icon2.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="build/tailwind.css">
+</head>
+
+<body class="bg-[#313030]">
+    <div class="relative">
+        <header>
+            <!-- mobile-nav -->
+            <div class="bg-[#232323] h-[60px] md:h-20 flex lg:hidden">
+                <a href="javascript:void(0);" class="inline-block h-full p-3 text-white" id="open-nav">
+                    <i class="fa-solid fa-bars text-[35px] md:text-[55px]"></i>
+                </a>
+                <div class="absolute bg-black w-full min-h-screen z-50 transition-all ease-in-out duration-300 -left-full block"
+                    id="hidden-nav">
+                    <div class="w-full block text-end text-3xl py-3 px-5">
+                        <a href="javascript:void(0)" class="inline-block text-white" id="close-nav">
+                            <i class="fa-solid fa-xmark h-full"></i>
+                        </a>
+                    </div>
+                    <div class="pb-4 px-4 text-xl md:text-3xl lg:text-3xl text-white overflow-y-scroll h-auto">
+                        <div>
+                            <img src="public/img/logo.png" alt="kanime" class="w-1/2 h-full mx-auto">
+                        </div>
+                        <a href="javascript:void(0)" class="w-full inline-block mt-4 p-2">
+                            <i class="fa-solid fa-house mr-2"></i>
+                            Trang chủ
+                        </a>
+                        <div class="w-full my-1">
+                            <a href="javascript:void(0)" class="block p-2" onclick="showNavItem(this)">
+                                <i class="fa-solid fa-magnifying-glass mr-2"></i>
+                                Tìm kiếm
+                            </a>
+                            <div class="w-full mt-2 hidden mb-nav-item">
+                                <input type="text" placeholder="Search"
+                                    class="w-full p-2 rounded-xl outline-none mb-2 text-black">
+                                <div id="list-search" class="overflow-y-scroll h-[500px]">
+
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full my-1 ">
+                            <a href="javascript:void(0)" class="block p-2" onclick="showNavItem(this)">
+                                <i class="fa-solid fa-caret-right mr-2"></i>
+                                Thể loại
+                            </a>
+                            <div class="w-full hidden mb-nav-item text-white text-base md:text-xl pl-8">
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    abc xyz def
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    abc xyz def
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    abc xyz def
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full my-1 ">
+                            <a href="javascript:void(0)" class="block p-2" onclick="showNavItem(this)">
+                                <i class="fa-solid fa-caret-right mr-2"></i>
+                                Trạng thái
+                            </a>
+                            <div class="w-full hidden mb-nav-item text-white text-base md:text-xl pl-8">
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    Đang tiến hành
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    Hoàn thành
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full my-1">
+                            <a href="javascript:void(0)" class="block p-2" onclick="showNavItem(this)">
+                                <i class="fa-solid fa-caret-right mr-2"></i>
+                                Năm phát hành
+                            </a>
+                            <div class="w-full hidden mb-nav-item text-white text-base md:text-xl pl-8">
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    Trước 2015
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    2016
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    2017
+                                </a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="w-full inline-block my-1 p-2">
+                            <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                            Đăng nhập
+                        </a>
+
+                    </div>
+                </div>
+                <a href="javascipt:void(0)" class="inline-block h-full right-0 mx-auto p-3">
+                    <img src="public/img/logo.png" alt="" class="h-full" />
+                </a>
+
+            </div>
+
+            <!-- pc-nav -->
+            <div class="hidden lg:block bg-[#232323] h-16 w-full">
+                <div class="max-w-[1280px] p-3 mx-auto h-full text-white flex text-base xl:text-lg">
+                    <a href=" javascript:void(0)" class="h-full mr-3 xl:mr-4">
+                        <img src="public/img/logo.png" class="h-full w-auto" alt="">
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="inline-block mx-2 xl:mx-3 leading-10 hover:text-shadow-main hover:text-[#0ff]">
+                        Trang chủ
+                    </a>
+                    <div class="inline-block mx-2 xl:mx-3 leading-10 relative cursor-pointer group">
+                        <span class="group-hover:text-[#0ff] group-hover:text-shadow-main">
+                            Thể Loại
+                        </span>
+                        <div class="
+                                absolute w-[44rem] h-auto z-[1] top-10 -left-40 bg-black hidden
+                                bg-opacity-60 group-hover:grid grid-cols-5 gap-1 p-1 text-center text-sm xl:text-base">
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Psychological
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Super Power
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Psychological
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Đời Thường
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Hành Động
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Học Đường
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Viễn Tưởng
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Shounen Ai
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Tokusatsu
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Coming of Age
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Martial Arts
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Trinh Thám
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Phiêu Lưu
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Lịch Sử
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Blu-ray
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Space
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Hành Động
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Học Đường
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Viễn Tưởng
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Shounen Ai
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Tokusatsu
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-block mx-2 xl:mx-3 leading-10 relative cursor-pointer group">
+                        <span class="group-hover:text-[#0ff] group-hover:text-shadow-main">
+                            Năm phát hành
+                        </span>
+                        <div class="
+                                absolute w-[30rem] h-auto z-[1] top-10 -left-20 bg-black hidden
+                                bg-opacity-60 group-hover:grid grid-cols-5 gap-1 p-1 text-center text-sm xl:text-base">
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Trước 2015
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2016
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2017
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2018
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2019
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2020
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2021
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2022
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2023
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-block mx-2 xl:mx-3 leading-10 relative cursor-pointer group">
+                        <span class="group-hover:text-[#0ff] group-hover:text-shadow-main">
+                            Trạng thái
+                        </span>
+                        <div class="
+                                absolute w-[22rem] h-auto z-[1] top-10 -left-20 bg-black hidden
+                                bg-opacity-60 group-hover:grid grid-cols-2 gap-1 p-1 text-center text-sm xl:text-base">
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Đang tiến hành
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Hoàn thành
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-block xl:mx-3 h-full rounded-lg relative text-black w-[30%] mx-auto">
+                        <input type="text" placeholder="Search..." id="search-input"
+                            class="h-full py-2 pl-2 pr-7 rounded-lg outline-none w-full focus:shadow-[0px_-2px_15px] focus:shadow-[#00ffff]">
+                        <button class="absolute top-0 right-0 mr-2 h-full"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                        <div id="search-recommend" class="bg-black bg-opacity-60 pt-2 pb-1 px-1 relative z-[1] hidden">
+
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- <a href="javascript:void(0)"
+                        class="inline-block mx-2 xl:mx-3 leading-10 hover:text-shadow-main hover:text-[#0ff]">
+                        Đăng nhập
+                    </a> -->
+                    <div href="javascript:void(0)" class="inline-block mx-2 xl:mx-3 relative bg-[#232323] group">
+                        <a href="javascript:void(0)"
+                            class="block h-full group-hover:rotate-180 transition-all duration-300 relative z-[2]">
+                            <img src="public/img/user/mywaifu.jpg" alt="" class="h-full w-auto rounded-full">
+                        </a>
+
+                        <div class="
+                                absolute leading-10 bg-black bg-opacity-60 w-full text-center transition-all duration-300
+                                pt-4 -bottom-[7.5rem] hidden group-hover:block z-[1]">
+                            <a href="javascript:void(0)" class="block hover:text-shadow-main hover:text-[#0ff] ">
+                                <i class="fa-solid fa-info"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="block hover:text-shadow-main hover:text-[#0ff] ">
+                                <i class="fa-solid fa-film"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="block hover:text-shadow-main hover:text-[#0ff] ">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="slide-show">
+                <!-- pc-slide -->
+                <div class="
+                        grid text-white gap-1 max-w-[1280px] mx-auto p-1 bg-[#232323] mt-4
+                        h-[16rem] md:h-[25rem] xl:h-[34rem]
+                        grid-cols-2 lg:grid-cols-4">
+
+                    <div class="col-start-1 lg:row-end-2 lg:col-start-2 row-span-2 col-span-2 relative first:block"
+                        id="big-slide">
+                        <a href="javascript:void(0)" id="slide-1" class=" absolute w-full h-full">
+                            <img src="public/img/nen/1.png" class="w-full h-full" alt="">
+                            <div class="
+                                bg-black bg-opacity-50 w-full absolute bottom-0 flex flex-row py-3 
+                                px-1 sm:px-4">
+                                <div class="basis-1/5">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                </div>
+                                <div class="basis-4/5 ml-3">
+                                    <span class="
+                                        text-ellipsis overflow-hidden font-semibold text-xl
+                                        line-clamp-1 sm:line-clamp-2">
+                                        One piece
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        One piece
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        <i class="fa-solid fa-clapperboard text-[#0ff]"></i>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                    </span>
+                                    <button
+                                        class="mt-1 py-1 px-10 border-2 border-[#0ff] border-solid rounded-md hidden xl:block"
+                                        title="watch now">
+                                        <i class="fa-solid fa-play text-[#0ff]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="slide-2" class=" absolute w-full h-full">
+                            <img src="public/img/nen/2.jpg" class="w-full h-full" alt="">
+                            <div class="
+                                bg-black bg-opacity-50 w-full absolute bottom-0 flex flex-row py-3 
+                                px-1 sm:px-4">
+                                <div class="basis-1/5">
+                                    <img src="public/img/bia/2.jpg" alt="" class="w-full h-auto">
+                                </div>
+                                <div class="basis-4/5 ml-3">
+                                    <span class="
+                                        text-ellipsis overflow-hidden font-semibold text-xl
+                                        line-clamp-1 sm:line-clamp-2">
+                                        Vanitas
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        Vanitas
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        <i class="fa-solid fa-clapperboard text-[#0ff]"></i>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                    </span>
+                                    <button
+                                        class="mt-1 py-1 px-10 border-2 border-[#0ff] border-solid rounded-md hidden xl:block"
+                                        title="watch now">
+                                        <i class="fa-solid fa-play text-[#0ff]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="slide-3" class=" absolute w-full h-full">
+                            <img src="public/img/nen/3.jpeg" class="w-full h-full" alt="">
+                            <div class="
+                                bg-black bg-opacity-50 w-full absolute bottom-0 flex flex-row py-3 
+                                px-1 sm:px-4">
+                                <div class="basis-1/5">
+                                    <img src="public/img/bia/3.jpg" alt="" class="w-full h-auto">
+                                </div>
+                                <div class="basis-4/5 ml-3">
+                                    <span class="
+                                        text-ellipsis overflow-hidden font-semibold text-xl
+                                        line-clamp-1 sm:line-clamp-2">
+                                        Peach
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        Peach
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        <i class="fa-solid fa-clapperboard text-[#0ff]"></i>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                    </span>
+                                    <button
+                                        class="mt-1 py-1 px-10 border-2 border-[#0ff] border-solid rounded-md hidden xl:block"
+                                        title="watch now">
+                                        <i class="fa-solid fa-play text-[#0ff]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="slide-4" class=" absolute w-full h-full">
+                            <img src="public/img/nen/4.jpg" class="w-full h-full" alt="">
+                            <div class="
+                                bg-black bg-opacity-50 w-full absolute bottom-0 flex flex-row py-3 
+                                px-1 sm:px-4">
+                                <div class="basis-1/5">
+                                    <img src="public/img/bia/4.jpg" alt="" class="w-full h-auto">
+                                </div>
+                                <div class="basis-4/5 ml-3">
+                                    <span class="
+                                        text-ellipsis overflow-hidden font-semibold text-xl
+                                        line-clamp-1 sm:line-clamp-2">
+                                        Sekoin
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        Sekoin
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        <i class="fa-solid fa-clapperboard text-[#0ff]"></i>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                    </span>
+                                    <button
+                                        class="mt-1 py-1 px-10 border-2 border-[#0ff] border-solid rounded-md hidden xl:block"
+                                        title="watch now">
+                                        <i class="fa-solid fa-play text-[#0ff]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="slide-5" class=" absolute w-full h-full">
+                            <img src="public/img/nen/5.jpg" class="w-full h-full" alt="">
+                            <div class="
+                                bg-black bg-opacity-50 w-full absolute bottom-0 flex flex-row py-3 
+                                px-1 sm:px-4">
+                                <div class="basis-1/5">
+                                    <img src="public/img/bia/5.jpg" alt="" class="w-full h-auto">
+                                </div>
+                                <div class="basis-4/5 ml-3">
+                                    <span class="
+                                        text-ellipsis overflow-hidden font-semibold text-xl
+                                        line-clamp-1 sm:line-clamp-2">
+                                        Shin
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        Shin
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        <i class="fa-solid fa-clapperboard text-[#0ff]"></i>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                    </span>
+                                    <button
+                                        class="mt-1 py-1 px-10 border-2 border-[#0ff] border-solid rounded-md hidden xl:block"
+                                        title="watch now">
+                                        <i class="fa-solid fa-play text-[#0ff]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="slide-6" class=" absolute w-full h-full">
+                            <img src="public/img/nen/6.jpg" class="w-full h-full" alt="">
+                            <div class="
+                                bg-black bg-opacity-50 w-full absolute bottom-0 flex flex-row py-3 
+                                px-1 sm:px-4">
+                                <div class="basis-1/5">
+                                    <img src="public/img/bia/6.jpg" alt="" class="w-full h-auto">
+                                </div>
+                                <div class="basis-4/5 ml-3">
+                                    <span class="
+                                        text-ellipsis overflow-hidden font-semibold text-xl
+                                        line-clamp-1 sm:line-clamp-2">
+                                        Slime
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        Slime
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        <i class="fa-solid fa-clapperboard text-[#0ff]"></i>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                    </span>
+                                    <button
+                                        class="mt-1 py-1 px-10 border-2 border-[#0ff] border-solid rounded-md hidden xl:block"
+                                        title="watch now">
+                                        <i class="fa-solid fa-play text-[#0ff]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="slide-7" class=" absolute w-full h-full">
+                            <img src="public/img/nen/7.jpg" class="w-full h-full" alt="">
+                            <div class="
+                                bg-black bg-opacity-50 w-full absolute bottom-0 flex flex-row py-3 
+                                px-1 sm:px-4">
+                                <div class="basis-1/5">
+                                    <img src="public/img/bia/7.jpg" alt="" class="w-full h-auto">
+                                </div>
+                                <div class="basis-4/5 ml-3">
+                                    <span class="
+                                        text-ellipsis overflow-hidden font-semibold text-xl
+                                        line-clamp-1 sm:line-clamp-2">
+                                        Isekai
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        Isekai
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        <i class="fa-solid fa-clapperboard text-[#0ff]"></i>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                    </span>
+                                    <button
+                                        class="mt-1 py-1 px-10 border-2 border-[#0ff] border-solid rounded-md hidden xl:block"
+                                        title="watch now">
+                                        <i class="fa-solid fa-play text-[#0ff]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript:void(0)" id="slide-8" class=" absolute w-full h-full">
+                            <img src="public/img/nen/8.jpg" class="w-full h-full" alt="">
+                            <div class="
+                                bg-black bg-opacity-50 w-full absolute bottom-0 flex flex-row py-3 
+                                px-1 sm:px-4">
+                                <div class="basis-1/5">
+                                    <img src="public/img/bia/8.jpg" alt="" class="w-full h-auto">
+                                </div>
+                                <div class="basis-4/5 ml-3">
+                                    <span class="
+                                        text-ellipsis overflow-hidden font-semibold text-xl
+                                        line-clamp-1 sm:line-clamp-2">
+                                        Bat ca 2 tay
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        Bat ca 2 tay
+                                    </span>
+                                    <span class="text-ellipsis overflow-hidden text-base font-light line-clamp-1">
+                                        <i class="fa-solid fa-clapperboard text-[#0ff]"></i>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                        <span>Echi</span>
+                                    </span>
+                                    <button
+                                        class="mt-1 py-1 px-10 border-2 border-[#0ff] border-solid rounded-md hidden xl:block"
+                                        title="watch now">
+                                        <i class="fa-solid fa-play text-[#0ff]"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-slide relative hidden lg:block group">
+                        <a href="javascript:void(0)" class="absolute w-full h-full">
+                            <img src="public/img/nen/1.png" class="w-full h-full" alt="">
+                            <div class="bg-black bg-opacity-50 w-full absolute bottom-0 py-1 px-3">
+                                <span
+                                    class="text-ellipsis overflow-hidden line-clamp-1 group-hover:text-shadow-main group-hover:text-[#0ff]">
+                                    1
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-slide relative hidden lg:block group">
+                        <a href="javascript:void(0)" class="absolute w-full h-full">
+                            <img src="public/img/nen/2.jpg" class="w-full h-full" alt="">
+                            <div class="bg-black bg-opacity-50 w-full absolute bottom-0 py-1 px-3">
+                                <span
+                                    class="text-ellipsis overflow-hidden line-clamp-1 group-hover:text-shadow-main group-hover:text-[#0ff]">
+                                    2
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-slide relative hidden lg:block group">
+                        <a href="javascript:void(0)" class="absolute w-full h-full">
+                            <img src="public/img/nen/3.jpeg" class="w-full h-full" alt="">
+                            <div class="bg-black bg-opacity-50 w-full absolute bottom-0 py-1 px-3">
+                                <span
+                                    class="text-ellipsis overflow-hidden line-clamp-1 group-hover:text-shadow-main group-hover:text-[#0ff]">
+                                    3
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-slide relative hidden lg:block group">
+                        <a href="javascript:void(0)" class="absolute w-full h-full">
+                            <img src="public/img/nen/4.jpg" class="w-full h-full" alt="">
+                            <div class="bg-black bg-opacity-50 w-full absolute bottom-0 py-1 px-3">
+                                <span
+                                    class="text-ellipsis overflow-hidden line-clamp-1 group-hover:text-shadow-main group-hover:text-[#0ff]">
+                                    4
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-slide relative hidden lg:block group">
+                        <a href="javascript:void(0)" class="absolute w-full h-full">
+                            <img src="public/img/nen/5.jpg" class="w-full h-full" alt="">
+                            <div class="bg-black bg-opacity-50 w-full absolute bottom-0 py-1 px-3">
+                                <span
+                                    class="text-ellipsis overflow-hidden line-clamp-1 group-hover:text-shadow-main group-hover:text-[#0ff]">
+                                    5
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-slide relative hidden lg:block group">
+                        <a href="javascript:void(0)" class="absolute w-full h-full">
+                            <img src="public/img/nen/6.jpg" class="w-full h-full" alt="">
+                            <div class="bg-black bg-opacity-50 w-full absolute bottom-0 py-1 px-3">
+                                <span
+                                    class="text-ellipsis overflow-hidden line-clamp-1 group-hover:text-shadow-main group-hover:text-[#0ff]">
+                                    6
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-slide relative hidden lg:block group">
+                        <a href="javascript:void(0)" class="absolute w-full h-full">
+                            <img src="public/img/nen/7.jpg" class="w-full h-full" alt="">
+                            <div class="bg-black bg-opacity-50 w-full absolute bottom-0 py-1 px-3">
+                                <span
+                                    class="text-ellipsis overflow-hidden line-clamp-1 group-hover:text-shadow-main group-hover:text-[#0ff]">
+                                    7
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="small-slide relative hidden lg:block group">
+                        <a href="javascript:void(0)" class="absolute w-full h-full">
+                            <img src="public/img/nen/8.jpg" class="w-full h-full" alt="">
+                            <div class="bg-black bg-opacity-50 w-full absolute bottom-0 py-1 px-3">
+                                <span
+                                    class="text-ellipsis overflow-hidden line-clamp-1 group-hover:text-shadow-main group-hover:text-[#0ff]">
+                                    8
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="max-w-[1280px] mx-auto bg-[#232323] mt-4 p-3 lg:grid grid-cols-3 gap-3 xl:grid-cols-4">
+                    <div class="col-span-2 xl:col-span-3">
+                        <a href="javascript:void(0)"
+                            class="text-white font-semibold text-xl hover:text-shadow-main hover:text-[#0ff]">
+                            Phim mới cập nhật <i class="fa-regular fa-star"></i>
+                        </a>
+                        <div class="grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 mt-3
+                            content-center text-white text-base md:text-lg">
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/2.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/3.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/4.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/5.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/6.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/7.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/8.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/2.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/3.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/4.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/5.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/6.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/7.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/8.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/2.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/3.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                            <a class="relative rounded-md overflow-hidden hover:text-shadow-main hover:text-[#0ff]"
+                                href="javascript:void(0)">
+                                <img src="public/img/bia/4.jpg" alt="" class="w-full h-full">
+                                <div class="absolute bottom-0 w-full bg-black bg-opacity-70 pl-1">
+                                    <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, dolorum
+                                        voluptatem cumque totam deserunt,
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block">
+                        <a href="javascript:void(0)"
+                            class="text-white font-semibold text-xl hover:text-shadow-main hover:text-[#0ff]">
+                            Top hoạt động <i class="fa-solid fa-ranking-star"></i>
+                        </a>
+                        <div class="w-full text-white mt-3 bg-black">
+                            <div class="w-full grid grid-cols-3 gap-1 text-center px-1" id="tab-select">
+                                <a href="javascript:void(0)" class="p-2 tab tab-active" data-target="1"
+                                    onclick="changeTab(this)">
+                                    View
+                                </a>
+                                <a href="javascript:void(0)" class="p-2 tab" data-target="2" onclick="changeTab(this)">
+                                    Like
+                                </a>
+                                <a href="javascript:void(0)" class="p-2 tab" data-target="3" onclick="changeTab(this)">
+                                    Search
+                                </a>
+                            </div>
+                            <div class="w-full p-1 overflow-hidden" id="tab-content">
+                                <div id="tab-1" class="w-full">
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-eye"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="tab-2" class="hidden w-full">
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] odd:bg-white odd:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-heart"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div id="tab-3" class="hidden w-full">
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)"
+                                        class="p-2 flex flex-row w-full hover:text-[#ff0] even:bg-white even:bg-opacity-20">
+                                        <div class="basis-3/12">
+                                            <img src="public/img/bia/1.jpg" alt="">
+                                        </div>
+                                        <div class="basis-9/12 ml-2">
+                                            <span class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem
+                                                ab molestias minima quas sint
+                                            </span>
+                                            <span class="mt-1 font-light text-sm">
+                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                999.999.999
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="manga-slide">
+                <div class="max-w-[1280px] mx-auto bg-[#232323] mt-4 p-3 ">
+                    <a href="javascript:void(0)"
+                        class="text-white font-semibold text-xl hover:text-shadow-main hover:text-[#0ff]">
+                        Top Manga có thể bạn sẽ thích
+                    </a>
+                    <div class="relative mt-3">
+                        <div class="snap-x flex overflow-x-scroll last:m-0 scroll-smooth" id="manga-content">
+
+                            <div class="snap-start w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="snap-end w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="snap-end w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="snap-end w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="snap-end w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="snap-end w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="snap-end w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="snap-end w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="snap-end w-[40%] sm:w-[30%] md:w-[25%] lg:w-[15%] flex-shrink-0 mr-2">
+                                <a href="javascript:void(0)" class="relative w-full">
+                                    <img src="public/img/bia/1.jpg" alt="" class="w-full h-auto">
+                                    <div class="absolute bg-black bg-opacity-60 text-white bottom-0 pl-2">
+                                        <span class="text-ellipsis overflow-hidden line-clamp-1">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nemo magni
+                                            laborum molestias
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <button id="scroll-left" onclick="scrollMangaList('left')"
+                            class="absolute top-[35%] text-5xl text-white bg-black bg-opacity-40 py-4 px-2">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </button>
+                        <button id="scroll-right" onclick="scrollMangaList('right')"
+                            class="absolute top-[35%] text-5xl text-white bg-black bg-opacity-40 py-4 px-2 right-0">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="public/js/devtoolscheck.js"></script>
+
+    <script>
+
+        document.getElementById("close-nav").onclick = () => {
+            document.getElementById("hidden-nav").style.left = "-100%";
+        }
+        document.getElementById("open-nav").onclick = () => {
+            document.getElementById("hidden-nav").style.left = "0";
+        }
+
+        function scrollMangaList(type) {
+            const contain = document.getElementById("manga-content");
+            const scrollWidth = contain.scrollWidth;
+            const clientWidth = contain.clientWidth;
+            let size = 0;
+            if (clientWidth <= 1024) size = 150;
+            if (clientWidth <= 1280 && clientWidth > 1024) size = 100;
+            const scrolled = parseInt(((contain.scrollLeft) / (scrollWidth - clientWidth)) * 100);
+            if (type === "right") {
+                if (scrolled > 97) {
+                    contain.scrollLeft = 0;
+                } else {
+                    contain.scrollLeft += size;
+                }
+            }
+            if (type === "left") {
+                if (scrolled < 3) {
+                    contain.scrollLeft = 999999;
+                } else {
+                    contain.scrollLeft -= size;
+                }
+            }
+
+            console.log(scrolled);
+        }
+
+        function showNavItem(ele) {
+            const navItem = document.getElementsByClassName("mb-nav-item");
+            const childItem = ele.parentElement.children[1];
+            childItem.classList.toggle("hidden");
+            for (const e of navItem) {
+                if (!e.classList.contains("hidden") && e !== childItem) {
+                    e.classList.toggle("hidden");
+                }
+            }
+
+        }
+
+        function changeTab(ele) {
+            const tabTarget = ele.getAttribute("data-target");
+            const tabs = document.getElementById("tab-content").children;
+            const listTab = document.getElementById("tab-select").children;
+            for (const tab of tabs) {
+                if (!tab.classList.contains("hidden")) {
+                    tab.classList.add("hidden");
+                }
+            }
+            for (const tab of listTab) {
+                if (tab.classList.contains("tab-active")) {
+                    tab.classList.remove("tab-active");
+                }
+            }
+            ele.classList.add("tab-active");
+            document.getElementById(`tab-${tabTarget}`).classList.remove("hidden");
+        }
+
+        slideAction()
+
+        // 
+        function slideAction() {
+            const slideItem = document.getElementById("big-slide").children;
+
+            let currentSlide = 1;
+            setInterval(() => {
+                for (const ele of slideItem) {
+                    if (!ele.classList.contains("hidden")) {
+                        ele.classList.add("hidden");
+                    }
+                }
+
+                document.getElementById(`slide-${currentSlide}`).classList.remove("hidden");
+                if (currentSlide == slideItem.length) {
+                    currentSlide = 1;
+                } else {
+                    currentSlide++;
+                }
+            }, 5000)
+
+        }
+    </script>
+</body>
+
+</html>

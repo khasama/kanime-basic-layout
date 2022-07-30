@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-active {
+    text-shadow: 0 0 15px #ff0;
+    color: #ff0;
+    border-bottom: 4px solid #ff0;
+}
+
+#manga-content::-webkit-scrollbar {
+    display: none;
+}
+#manga-content {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tab:hover {
+    text-shadow: 0 0 15px #ff0;
+    color: #ff0;
+    border-bottom: 4px solid #ff0;
+}
+
+@layer base {
+    * {
+        font-family: "Open sans";
+    }
+}
