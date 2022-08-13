@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="public/img/icon2.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="build/tailwind.css">
+</head>
+
+<body class="bg-[#313030]">
+    <div class="relative">
+        <header>
+            <!-- mobile-nav -->
+            <div class="bg-[#232323] h-[60px] md:h-20 flex lg:hidden">
+                <a href="javascript:void(0);" class="inline-block h-full p-3 text-white" id="open-nav">
+                    <i class="fa-solid fa-bars text-[35px] md:text-[55px]"></i>
+                </a>
+                <div class="absolute bg-black w-full min-h-screen z-50 transition-all ease-in-out duration-300 -left-full block"
+                    id="hidden-nav">
+                    <div class="w-full block text-end text-3xl py-3 px-5">
+                        <a href="javascript:void(0)" class="inline-block text-white" id="close-nav">
+                            <i class="fa-solid fa-xmark h-full"></i>
+                        </a>
+                    </div>
+                    <div class="pb-4 px-4 text-xl md:text-3xl lg:text-3xl text-white overflow-y-scroll h-auto">
+                        <div>
+                            <img src="public/img/logo.png" alt="kanime" class="w-1/2 h-full mx-auto">
+                        </div>
+                        <a href="javascript:void(0)" class="w-full inline-block mt-4 p-2">
+                            <i class="fa-solid fa-house mr-2"></i>
+                            Trang chủ
+                        </a>
+                        <div class="w-full my-1">
+                            <a href="javascript:void(0)" class="block p-2" onclick="showNavItem(this)">
+                                <i class="fa-solid fa-magnifying-glass mr-2"></i>
+                                Tìm kiếm
+                            </a>
+                            <div class="w-full mt-2 hidden mb-nav-item">
+                                <input type="text" placeholder="Search"
+                                    class="w-full p-2 rounded-xl outline-none mb-2 text-black">
+                                <div id="list-search" class="overflow-y-scroll h-[500px]">
+
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0)" class="flex p-1 bg-[#333] mb-1 h-1/4 md:h-1/3">
+                                        <img src="public/img/bia/1.jpg" alt="" class="h-full w-auto">
+                                        <div class="pl-2">
+                                            <h3 class="text-ellipsis overflow-hidden line-clamp-2">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </h3>
+                                            <span
+                                                class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-lg text-gray-300">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                                                minus dolorum harum adipisci nobis totam sint necessitatibus rerum
+                                                obcaecati
+                                                repellat placeat laudantium doloribus accusantium tempora quisquam iste
+                                                hic
+                                                animi esse.
+                                            </span>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full my-1 ">
+                            <a href="javascript:void(0)" class="block p-2" onclick="showNavItem(this)">
+                                <i class="fa-solid fa-caret-right mr-2"></i>
+                                Thể loại
+                            </a>
+                            <div class="w-full hidden mb-nav-item text-white text-base md:text-xl pl-8">
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    abc xyz def
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    abc xyz def
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    abc xyz def
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full my-1 ">
+                            <a href="javascript:void(0)" class="block p-2" onclick="showNavItem(this)">
+                                <i class="fa-solid fa-caret-right mr-2"></i>
+                                Trạng thái
+                            </a>
+                            <div class="w-full hidden mb-nav-item text-white text-base md:text-xl pl-8">
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    Đang tiến hành
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    Hoàn thành
+                                </a>
+                            </div>
+                        </div>
+                        <div class="w-full my-1">
+                            <a href="javascript:void(0)" class="block p-2" onclick="showNavItem(this)">
+                                <i class="fa-solid fa-caret-right mr-2"></i>
+                                Năm phát hành
+                            </a>
+                            <div class="w-full hidden mb-nav-item text-white text-base md:text-xl pl-8">
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    Trước 2015
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    2016
+                                </a>
+                                <a href="javascript:void(0)" class="block mb-2">
+                                    <i class="fa-regular fa-circle-dot text-xs"></i>
+                                    2017
+                                </a>
+                            </div>
+                        </div>
+                        <a href="javascript:void(0)" class="w-full inline-block my-1 p-2">
+                            <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                            Đăng nhập
+                        </a>
+
+                    </div>
+                </div>
+                <a href="javascipt:void(0)" class="inline-block h-full right-0 mx-auto p-3">
+                    <img src="public/img/logo.png" alt="" class="h-full" />
+                </a>
+
+            </div>
+
+            <!-- pc-nav -->
+            <div class="hidden lg:block bg-[#232323] h-16 w-full">
+                <div class="max-w-[1280px] p-3 mx-auto h-full text-white flex text-base xl:text-lg">
+                    <a href=" javascript:void(0)" class="h-full mr-3 xl:mr-4">
+                        <img src="public/img/logo.png" class="h-full w-auto" alt="">
+                    </a>
+                    <a href="javascript:void(0)"
+                        class="inline-block mx-2 xl:mx-3 leading-10 hover:text-shadow-main hover:text-[#0ff]">
+                        Trang chủ
+                    </a>
+                    <div class="inline-block mx-2 xl:mx-3 leading-10 relative cursor-pointer group">
+                        <span class="group-hover:text-[#0ff] group-hover:text-shadow-main">
+                            Thể Loại
+                        </span>
+                        <div class="
+                                absolute w-[44rem] h-auto z-[1] top-10 -left-40 bg-black hidden
+                                bg-opacity-60 group-hover:grid grid-cols-5 gap-1 p-1 text-center text-sm xl:text-base">
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Psychological
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Super Power
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Psychological
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Đời Thường
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Hành Động
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Học Đường
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Viễn Tưởng
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Shounen Ai
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Tokusatsu
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Coming of Age
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Martial Arts
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Trinh Thám
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Phiêu Lưu
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Lịch Sử
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Blu-ray
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Space
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Hành Động
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Học Đường
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Viễn Tưởng
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Shounen Ai
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Tokusatsu
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-block mx-2 xl:mx-3 leading-10 relative cursor-pointer group">
+                        <span class="group-hover:text-[#0ff] group-hover:text-shadow-main">
+                            Năm phát hành
+                        </span>
+                        <div class="
+                                absolute w-[30rem] h-auto z-[1] top-10 -left-20 bg-black hidden
+                                bg-opacity-60 group-hover:grid grid-cols-5 gap-1 p-1 text-center text-sm xl:text-base">
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Trước 2015
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2016
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2017
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2018
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2019
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2020
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2021
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2022
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                2023
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-block mx-2 xl:mx-3 leading-10 relative cursor-pointer group">
+                        <span class="group-hover:text-[#0ff] group-hover:text-shadow-main">
+                            Trạng thái
+                        </span>
+                        <div class="
+                                absolute w-[22rem] h-auto z-[1] top-10 -left-20 bg-black hidden
+                                bg-opacity-60 group-hover:grid grid-cols-2 gap-1 p-1 text-center text-sm xl:text-base">
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Đang tiến hành
+                            </a>
+                            <a href="javascript:void(0)" class="hover:text-[#0ff] hover:text-shadow-main py-1">
+                                Hoàn thành
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-block xl:mx-3 h-full rounded-lg relative text-black w-[30%] mx-auto">
+                        <input type="text" placeholder="Search..." id="search-input"
+                            class="h-full py-2 pl-2 pr-7 rounded-lg outline-none w-full focus:shadow-[0px_-2px_15px] focus:shadow-[#00ffff]">
+                        <button class="absolute top-0 right-0 mr-2 h-full"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                        <div id="search-recommend" class="bg-black bg-opacity-60 pt-2 pb-1 px-1 relative z-[1] hidden">
+
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="javascript:void(0)" class="flex mb-2 group hover:bg-stone-700 hover:bg-opacity-40">
+                                <img src="public/img/bia/1.jpg" alt="" class="w-1/4 h-full">
+                                <div class="ml-1 text-white">
+                                    <h3
+                                        class="text-ellipsis overflow-hidden line-clamp-2 text-base group-hover:text-[#0ff]">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sint nobis
+                                        fuga voluptate aliqui
+                                    </h3>
+                                    <span
+                                        class="text-ellipsis overflow-hidden line-clamp-2 font-thin text-gray-300 text-xs">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod neque vero
+                                        possim
+                                    </span>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                    <!-- <a href="javascript:void(0)"
+                        class="inline-block mx-2 xl:mx-3 leading-10 hover:text-shadow-main hover:text-[#0ff]">
+                        Đăng nhập
+                    </a> -->
+                    <div href="javascript:void(0)" class="inline-block mx-2 xl:mx-3 relative bg-[#232323] group">
+                        <a href="javascript:void(0)"
+                            class="block h-full group-hover:rotate-180 transition-all duration-300 relative z-[2]">
+                            <img src="public/img/user/mywaifu.jpg" alt="" class="h-full w-auto rounded-full">
+                        </a>
+
+                        <div class="
+                                absolute leading-10 bg-black bg-opacity-60 w-full text-center transition-all duration-300
+                                pt-4 -bottom-[7.5rem] hidden group-hover:block z-[1]">
+                            <a href="javascript:void(0)" class="block hover:text-shadow-main hover:text-[#0ff] ">
+                                <i class="fa-solid fa-info"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="block hover:text-shadow-main hover:text-[#0ff] ">
+                                <i class="fa-solid fa-film"></i>
+                            </a>
+                            <a href="javascript:void(0)" class="block hover:text-shadow-main hover:text-[#0ff] ">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="max-w-7xl mx-auto">
+            <div class="anime-info grid text-white gap-1 mt-4 bg-[#232323] p-1 w-full
+                grid-cols-3 md:grid-cols-12">
+                <div class="thumb md:col-span-3 xl:col-span-2 relative">
+                    <img src="public/img/bia/1.jpg" class="w-full h-full" alt="">
+                    <div class="absolute w-full bottom-0 py-1 text-center bg-black bg-opacity-50 text-xs overflow-auto">
+                        <a href="javascript:void(0)"
+                            class="rounded-md px-4 py-2 bg-green-600 hover:bg-green-800 inline-block mb-1 md:m-0">
+                            Xem phim
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="rounded-md px-4 py-2 bg-blue-600 hover:bg-blue-800 inline-block">
+                            Lưu phim
+                        </a>
+                    </div>
+                </div>
+                <div class="information col-span-2 md:col-span-9 lg:col-span-5 px-2 text-sm">
+                    <h1 class=" font-bold line-clamp-2 text-base md:text-lg lg:text-xl text-[#0ff]">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et saepe tempore ipsam eos deserunt
+                        dicta
+                    </h1>
+                    <h2 class="text-xs font-light line-clamp-1 md:text-sm sm:line-clamp-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt labore numquam dolorum.
+                        Dignissimos, magnam commodi nostrum ullam deserunt iste hic earum illo minus quod facilis velit
+                        consectetur odio excepturi autem?
+                    </h2>
+                    <div class="my-1">
+                        <span class="font-bold">
+                            Thể loại:
+                        </span>
+                        <div class="inline-block">
+                            <a href="javascript:void(0)"
+                                class="px-[8px] py-[2px] font-medium bg-orange-600 rounded-md m-1 inline-block">
+                                Echi
+                            </a>
+                            <a href="javascript:void(0)"
+                                class="px-[8px] py-[2px] font-medium bg-orange-600 rounded-md m-1 inline-block">
+                                Echi
+                            </a>
+                            <a href="javascript:void(0)"
+                                class="px-[8px] py-[2px] font-medium bg-orange-600 rounded-md m-1 inline-block">
+                                Echi
+                            </a>
+                            <a href="javascript:void(0)"
+                                class="px-[8px] py-[2px] font-medium bg-orange-600 rounded-md m-1 inline-block">
+                                Echi
+                            </a>
+                            <a href="javascript:void(0)"
+                                class="px-[8px] py-[2px] font-medium bg-orange-600 rounded-md m-1 inline-block">
+                                Echi
+                            </a>
+                            <a href="javascript:void(0)"
+                                class="px-[8px] py-[2px] font-medium bg-orange-600 rounded-md m-1 inline-block">
+                                Echi
+                            </a>
+                            <a href="javascript:void(0)"
+                                class="px-[8px] py-[2px] font-medium bg-orange-600 rounded-md m-1 inline-block">
+                                Echi
+                            </a>
+                            <a href="javascript:void(0)"
+                                class="px-[8px] py-[2px] font-medium bg-orange-600 rounded-md m-1 inline-block">
+                                Echi
+                            </a>
+                        </div>
+                    </div>
+                    <div class="my-1">
+                        <span class="font-bold">Năm:</span>
+                        <a href="javascript:void(0)" class="font-medium hover:text-shadow-main hover:text-[#0ff]">
+                            2022
+                        </a>
+                    </div>
+                    <div class="my-1">
+                        <span class="font-bold">Lượt xem:</span>
+                        <span class="font-light">
+                            999.999.999
+                        </span>
+                    </div>
+                    <div class="my-1">
+                        <span class="font-bold">Lượt thích:</span>
+                        <span class="font-light">
+                            999.999.999
+                        </span>
+                    </div>
+                </div>
+                <div class="list-ep col-span-3 md:col-span-12 lg:col-span-4 xl:col-span-5 p-2">
+                    <h3 class="font-bold text-base mb-2">Danh sách tập <i class="fa-solid fa-film"></i></h3>
+                    <div
+                        class="bg-black p-2 flex flex-row flex-wrap max-h-48 overflow-y-auto items-center justify-center">
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            000
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            888
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            7
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            66
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            1
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            55
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            222
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            4444
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            11
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            3
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            2
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            1
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                        <a href="javascript:void(0)" class="text-center py-1 m-1 rounded-md bg-slate-800 
+                            hover:bg-slate-900 hover:text-shadow-yellow hover:text-[#ff0]
+                            w-[20%] md:w-[12%] lg:w-[15%] xl:w-[12%]">
+                            9999
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="anime-season mt-2 bg-[#232323] w-full text-white">
+                <a href="javascript:void(0)"
+                    class="inline-block px-4 py-1 m-1 border border-[#0ff] text-[#0ff] hover:border-[#0ff] hover:text-[#0ff]">
+                    Phần 1
+                </a>
+                <a href="javascript:void(0)"
+                    class="inline-block px-4 py-1 m-1 border border-white hover:border-[#0ff] hover:text-[#0ff]">
+                    Phần 2
+                </a>
+                <a href="javascript:void(0)"
+                    class="inline-block px-4 py-1 m-1 border border-white hover:border-[#0ff] hover:text-[#0ff]">
+                    Phần 3
+                </a>
+                <a href="javascript:void(0)"
+                    class="inline-block px-4 py-1 m-1 border border-white hover:border-[#0ff] hover:text-[#0ff]">
+                    Phần 4
+                </a>
+                <a href="javascript:void(0)"
+                    class="inline-block px-4 py-1 m-1 border border-white hover:border-[#0ff] hover:text-[#0ff]">
+                    Phần 5
+                </a>
+            </div>
+
+            <div class="anime-content mt-2 bg-[#232323] w-full text-white p-2">
+                <h3 class="font-bold text-base mb-2">
+                    Nội dung phim <i class="fa-solid fa-star-of-david"></i>
+                </h3>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eum sit dolores dolorem culpa
+                    fugit aspernatur! Quae, quisquam quia ex voluptatibus, voluptate, rem repellat ea ipsam quasi atque
+                    rerum molestias?
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="bg-[#232323] h-auto mt-4">
+                <div class="max-w-7xl mx-auto h-full p-2 flex">
+                    <div class="basis-1/3 md:basis-1/5 lg:basis-2/12 mr-2">
+                        <img src="public/img/logo.png" alt="Kanime" class="w-full h-auto">
+                    </div>
+                    <div class="basis-2/3 md:basis-4/5 lg:basis-10/12">
+                        <span class="hidden md:block text-xs text-white text-left">
+                            Nội dung của trang web được tổng hợp từ nhiều nguồn khác nhau trên Internet. Nếu quyền lợi
+                            của bạn bị vi phạm, vui lòng thông báo cho tôi còn xóa hay không thì tôi không biết =))
+                        </span>
+                        <small class="text-xs text-slate-500 basis-2/3 text-center w-full inline-block">
+                            &copy; Copyright 2022, Kanime
+                        </small>
+                    </div>
+                    <!-- <div class="flex-row basis-2/3">
+                        <span class="">
+                            Nội dung của trang web được tổng hợp từ nhiều nguồn khác nhau trên Internet. Nếu quyền lợi
+                            của bạn bị vi phạm, vui lòng thông báo cho tôi còn xóa hay không thì tôi không biết =))
+                        </span>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
